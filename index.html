@@ -1,0 +1,455 @@
+<!-- The given project front-end is prepared by Rishu Raj,
+email: go23rishu@gmail.com
+I have prepared this FrontEnd as asked for the internship screening -->
+<!-- This is a static page and is not focused on Mobile Responsive View -->
+<!-- If any mistake found in logic, give chance to make improvements  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-Front-End-Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="container-fluid nav">
+      <div class="left">
+        <ul>
+          <li class="dropdown-toggle">Home</li>
+          <li class="dropdown-toggle">Shop</li>
+          <li class="dropdown-toggle">Blog</li>
+          <li class="dropdown-toggle">Pages</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li><i class="fa fa-shopping-cart" style="font-size: 25px"></i></li>
+          <li style="font-weight: 500">$58.00</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navbar Ends Here -->
+    <div
+      id="demo"
+      class="carousel slide"
+      style="padding: 0px 10vw"
+      data-ride="carousel"
+    >
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-color: black">
+          <img src="./images/slider3.webp" />
+          <div class="banner-text">
+            <h4>NEW ELECTRIC SANDER</h4>
+            <h1>Sander GWS</h1>
+            <span>Lorem ipsum dolor sit amet</span><br />
+            <button class="btn">Shopping Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <div class="container-fluid small-banners">
+      <div class="row">
+        <div class="col-4"><img src="./images/banner2.webp" /></div>
+        <div class="col-4"><img src="./images/banner3.webp" /></div>
+        <div class="col-4"><img src="./images/banner4.webp" /></div>
+      </div>
+    </div>
+
+    <!-- Second Division Ends Here -->
+
+    <!-- Hot Deals division starts from here -->
+    <!-- Using the Bootstrap Grid System -->
+    <div class="container-fluid hot-deals">
+      <h4>Hot Deals</h4>
+      <div class="row">
+        <div class="col">
+          <img src="./images//22_large.png" />
+          <h5 id="new">New</h5>
+          <div class="price-details">
+            <h6>Beauty & Health</h6>
+            <h3>13 Product Media</h3>
+            <h2>$80.00</h2>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/16_large.jpg" />
+          <div class="price-details">
+            <h6>Beauty & Health</h6>
+            <h3>Demo Product Title</h3>
+            <h2>$29.00</h2>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images//22_large.png" />
+          <div class="price-details">
+            <h6>Beauty & Health</h6>
+            <h3>Demo Product Title</h3>
+            <h2>$50.00</h2>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            src="./images/14_ec2cbd22-ee9a-478c-87e5-43bb0d4af0e7_large.jpg"
+          />
+          <div class="price-details">
+            <h6>Beauty & Health</h6>
+            <h3>Demo Product Title</h3>
+            <h2>$80.00</h2>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/featured.jpg" />
+          <h5 id="new">Sale</h5>
+          <h5 id="discount">-10%</h5>
+          <div class="price-details">
+            <h6>Beauty & Health</h6>
+            <h3>Demo Product Title</h3>
+
+            <h2>
+              <strike style="color: black; margin-right: 5px; font-weight: 300"
+                >$21.00</strike
+              >$19.00
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Arrivals Division Starts Here -->
+    <div class="container-fluid new-arrivals">
+      <div class="options">
+        <h4>New Arrivals</h4>
+        <div class="links">
+          <label>Automobiles</label>
+          <label>Beauty & Health</label>
+          <label>Games & Categories</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <img src="./images//22_large.png" />
+          <h5 id="new">New</h5>
+          <div class="price-details">
+            <h6>Beauty & Health</h6>
+            <h3>13 Product Media</h3>
+            <h2>$80.00</h2>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/16_large.jpg" />
+          <div class="price-details">
+            <h6>Beauty & Health</h6>
+            <h3>Demo Product Title</h3>
+            <h2>$29.00</h2>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images//22_large.png" />
+          <div class="price-details">
+            <h6>Beauty & Health</h6>
+            <h3>Demo Product Title</h3>
+            <h2>$50.00</h2>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            src="./images/14_ec2cbd22-ee9a-478c-87e5-43bb0d4af0e7_large.jpg"
+          />
+          <div class="price-details">
+            <h6>Beauty & Health</h6>
+            <h3>Demo Product Title</h3>
+            <h2>$80.00</h2>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/featured.jpg" />
+          <h5 id="new">Sale</h5>
+          <h5 id="discount">-10%</h5>
+          <div class="price-details">
+            <h6>Beauty & Health</h6>
+            <h3>Demo Product Title</h3>
+
+            <h2>
+              <strike style="color: black; margin-right: 5px; font-weight: 300"
+                >$21.00</strike
+              >$19.00
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Categories division starts here -->
+    <div class="container-fluid popular-categories">
+      <h4>Popular Categories</h4>
+      <div class="row">
+        <div class="col">
+          <img src="/images/featured.jpg" /><span>Tops & Sets</span>
+        </div>
+        <div class="col">
+          <img
+            src="/images/3_3d6aa075-6e18-44be-9d35-eaac15d9d835_large.jpg"
+          /><span>Electronics</span>
+        </div>
+        <div class="col">
+          <img src="/images/featured4.jpg" /> <span>Hot Categories</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="/images/featured.jpg" /><span>Tops & Sets</span>
+        </div>
+        <div class="col">
+          <img
+            src="/images/3_3d6aa075-6e18-44be-9d35-eaac15d9d835_large.jpg"
+          /><span>Electronics</span>
+        </div>
+        <div class="col">
+          <img src="/images/featured4.jpg" /><span>Hot Categories</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accessories & Parts division starts here -->
+    <div class="container accessories">
+      <div class="options">
+        <h4>Accessories & Parts</h4>
+        <div class="links">
+          <label>Games & Consoles</label>
+          <label>Beauty & Health</label>
+          <label>Automobiles</label>
+        </div>
+      </div>
+      <div class="parts">
+        <div class="big-picture">
+          <img
+            src="/images/21_58c8a7ec-c131-4b13-bcdf-8e3d9fda3979_large.jpg"
+          />
+          <div class="price">
+            <label style="color: grey; font-weight: 500">Automobiles</label>
+            <h2 style="font-size: 22px">Dummy Product Name</h2>
+            <div
+              class="ratings"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+              "
+            >
+              <div class="stars" style="color: orange">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <div class="cost">
+                <span style="font-size: 18px; font-weight: 700">$79.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-picture">
+          <div class="small-picture1">
+            <div class="items">
+              <img
+                src="./images/3_3d6aa075-6e18-44be-9d35-eaac15d9d835_large.jpg"
+              />
+              <div class="prices" style="padding: 10px 15px">
+                <label style="color: grey; font-weight: 500; font-size: 14px"
+                  >Beauty & Health</label
+                >
+                <h4 style="font-size: 16px">11. Product with Video</h4>
+                <h2
+                  style="
+                    color: red;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                  "
+                >
+                  $39.00
+                </h2>
+              </div>
+            </div>
+            <div class="items">
+              <img
+                src="./images/3_3d6aa075-6e18-44be-9d35-eaac15d9d835_large.jpg"
+              />
+              <div class="prices" style="padding: 10px 15px">
+                <label style="color: grey; font-weight: 500; font-size: 14px"
+                  >Beauty & Health</label
+                >
+                <h4 style="font-size: 16px">5. Simple Product</h4>
+                <h2
+                  style="
+                    color: red;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                  "
+                >
+                  $50.00
+                </h2>
+              </div>
+            </div>
+            <div class="items">
+              <img
+                src="./images/3_3d6aa075-6e18-44be-9d35-eaac15d9d835_large.jpg"
+              />
+              <div class="prices" style="padding: 10px 15px">
+                <label style="color: grey; font-weight: 500; font-size: 14px"
+                  >Beauty & Health</label
+                >
+                <h4 style="font-size: 16px">Demo Product Title</h4>
+                <h2
+                  style="
+                    color: red;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                  "
+                >
+                  $29.00
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="small-picture1">
+            <div class="items">
+              <img
+                src="./images/3_3d6aa075-6e18-44be-9d35-eaac15d9d835_large.jpg"
+              />
+              <div class="prices" style="padding: 10px 15px">
+                <label style="color: grey; font-weight: 500; font-size: 14px"
+                  >Beauty & Health</label
+                >
+                <h4 style="font-size: 16px">
+                  6. Variable with Soldout Product
+                </h4>
+                <h2
+                  style="
+                    color: red;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                  "
+                >
+                  <strike
+                    style="font-size: 16px; color: black; font-weight: 400"
+                    >$75.00</strike
+                  >
+                  $39.00
+                </h2>
+              </div>
+            </div>
+            <div class="items">
+              <img
+                src="./images/3_3d6aa075-6e18-44be-9d35-eaac15d9d835_large.jpg"
+              />
+              <div class="prices" style="padding: 10px 15px">
+                <label style="color: grey; font-weight: 500; font-size: 14px"
+                  >Automobiles</label
+                >
+                <h4 style="font-size: 16px">Dummy Product Name</h4>
+                <h2
+                  style="
+                    color: red;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                  "
+                >
+                  $79.00
+                </h2>
+              </div>
+            </div>
+            <div class="items">
+              <img
+                src="./images/3_3d6aa075-6e18-44be-9d35-eaac15d9d835_large.jpg"
+              />
+              <div class="prices" style="padding: 10px 15px">
+                <label style="color: grey; font-weight: 500; font-size: 14px"
+                  >Beauty & Health</label
+                >
+                <h4 style="font-size: 16px">Dummy Product Name</h4>
+                <h2
+                  style="
+                    color: red;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                  "
+                >
+                  $29.00
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer starts here -->
+    <div class="container-fluid footer">
+      <span>Copyright <i class="fa fa-copyright"></i> 2021 IsolPro</span>
+
+      <div class="payment-gateways">
+        <img src="./images/skrill-e1597175954433.png" alt="" />
+        <img src="./images/paypal_PNG14.png" alt="" />
+        <img src="./images/d5e48a6818f66240f7d274bc4073b4e6.jpg" alt="" />
+        <img src="./images/full-color-800x450.jpg" alt="" />
+      </div>
+    </div>
+
+    <script>
+      const images = ["./images/banner2.webp", "./images/banner3.webp"];
+      $(function () {
+        for (let i = 0; i < 2; i++)
+          $(".divProducts .div2").append("<img src='" + images[i] + "'/>");
+      });
+    </script>
+  </body>
+</html>
